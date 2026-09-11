@@ -1,0 +1,719 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Home | Automatax{% endblock %}
+
+{% block content %}
+
+{% comment %} Hero Section {% endcomment %}
+<section class="heroContainer">
+    <div class="heroWrap">
+        <button class="rounded-5">⭐ Award Winning Agency</button>
+        <h1>Automate Your Business. <br> Scale Without Stress.</h1>
+        <p>
+            We build AI-powered automation that handles customer <br>
+            interactions, follow-ups, and workflows helping your <br>
+            business grow faster with less manual effort. <br>
+        </p>
+
+        <div class="heroBtn">
+                <a href="#contact" class="getStarted rounded-3">Get Started Today</a>
+                <a href="#services" class="viewBtn rounded-3">View Our Work</a>
+        </div>
+
+    </div>
+</section>
+
+{% comment %} About Section {% endcomment %}
+<section id="about">
+    <div class="aboutWrap" data-animate="right">
+        <button class="rounded-3">WHO WE ARE</button>
+
+        <div class="aboutContainer">
+            <div class="aboutContainerWrap">
+
+                <div class="aboutImages" data-animate="right">
+                    <img src="{% static 'core/image/team1.png' %}" class="rounded-3" alt="team">
+                    <div class="imageDuo">
+                        <img src="{% static 'core/image/team2.png' %} " class="rounded-3" alt="team1">
+                        <img src="{% static 'core/image/team.png' %} " class="rounded-3" alt="team2">
+                    </div>
+                </div>
+
+                <div class="aboutText" data-animate="up">
+                    <h2>Building tomorrow's solutions with proven expertise and innovation</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quae assumenda possimus, cum harum qui consequuntur! Facilis error quisquam beatae.
+                    </p>
+
+                    <div class="stratWrap">
+                        <div class="strat">
+                            <div class="icon">
+                                <img src="{% static 'core/image/stacked.png' %}" alt="growth"> 
+                            </div>
+                            <div class="stratText">
+                                <h6>Strategic Growth</h6>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, cupiditate.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, cupiditate.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="strat">
+                            <div class="icon">
+                                <img src="{% static 'core/image/group.png' %}" alt="team"> 
+                            </div>
+                            <div class="stratText">
+                                <h6>Professional Team</h6>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, cupiditate.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, cupiditate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="aboutCTA" data-animate="down">
+                        <div class="CTAbtn">
+                            <a href="{% url 'getstarted' %}" class="getStarted rounded-3">Learn More About Us</a>
+                        </div>
+                        <div class="CTAtext">
+                            <p>Call us directly:</p>
+                            <h6>+1 (555) 234-5678</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectCount rounded-3" data-animate="right">
+            <div class="count">
+                <h3>76+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="count">
+                <h3>95.6%+</h3>
+                <p>Client Satisfaction</p>
+            </div>
+            <div class="count">
+                <h3>98+</h3>
+                <p>Happy Team</p>
+            </div>
+
+            <div class="count">
+                <h3>24/7+</h3>
+                <p>Rapid Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% comment %} Service Section {% endcomment %}
+<section id="services">
+    <div class="serviceintro" data-animate="right" >
+        <h6>Services</h6><hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel repellendus <br>
+            doloribus hic, facilis corporis vero quisquam nam ipsam ad tempore?
+        </p>
+    </div>
+    <div class="servicesContainer">
+       
+
+        <div class="featuredCard rounded-3">
+            <span class="badge">Most Popular</span>
+
+            <div class="">
+                <img src="{% static 'core/image/plane.png' %}"
+                class="flightIcon"
+                alt="flight">
+            </div>
+
+            <h2>Automated Workflows</h2>
+            <p>
+                Streamline your business processes with 
+                intelligent automation that saves time and 
+                reduces human error. Perfect for scaling teams.
+            </p>
+
+            <ul class="features">
+                <li>
+                    <img src="{% static 'core/image/check.png' %}" 
+                    alt="check">
+                    24/7 Processing
+                </li>
+                <li>
+                    <img src="{% static 'core/image/check.png' %}" 
+                    alt="check">
+                    Easy Integration
+                </li>
+
+                <li>
+                    <img src="{% static 'core/image/check.png' %}" 
+                    alt="check">
+                    Smart Analytics
+                </li>
+
+            </ul>
+            
+            <button class="primaryBtn">Get Started For Free</button>
+
+        </div>
+
+        <div class="servicesGrid">
+           
+            <div class="serviceCard rounded-3">
+                <div class="iconBox">
+                    <img src="{% static 'core/image/security.png' %}" alt="team"> 
+                </div>
+                {% comment %} <div class="iconBox small">ii</div> {% endcomment %}
+                <h6>Security Solutions</h6>
+                <p>
+                    Enterprise-grade security measures to protect your 
+                    data and maintain compliance standards.
+                </p>
+                <a href="#">Learn More <img src="{% static 'core/image/arrow.png' %}" alt="arrow"></a>
+            </div>
+
+            <div class="serviceCard rounded-3">
+                <div class="iconBox">
+                    <img src="{% static 'core/image/stacked.png' %}" alt="team"> 
+                </div>
+                <h6>Performance Analytics</h6>
+                <p>
+                    Real-time insights and comprehensive reporting to 
+                    optimize your business performance.
+                </p>
+                <a href="#">Learn More <img src="{% static 'core/image/arrow.png' %}" alt="arrow"></a>
+            </div>
+
+            <div class="serviceCard rounded-3">
+                <div class="iconBox">
+                    <img src="{% static 'core/image/backup.png' %}" alt="team"> 
+                </div>
+                <h6>Cloud Integration</h6>
+                <p>
+                    Flexible cloud solutions that scale 
+                    with your business needs and requirements.
+                </p>
+                <a href="#">Learn More <img src="{% static 'core/image/arrow.png' %}" alt="arrow"></a>
+            </div>
+
+            <div class="serviceCard rounded-3">
+                <div class="iconBox">
+                    <img src="{% static 'core/image/group.png' %}" alt="team"> 
+                </div>
+                <h6>Team Collaboration</h6>
+                <p>
+                    Seamless collaboration tools that bring your 
+                    team together regardless of location.
+                </p>
+                <a href="#">Learn More <img src="{% static 'core/image/arrow.png' %}" alt="arrow"></a>
+            </div>
+        </div>
+       
+    </div>
+</section>
+<section class="services-section" data-animate="right">
+
+    <div class="services-tabs">
+        <button class="tab active" data-tab="development"> Development</button>
+        <button class="tab " data-tab="marketing"> Marketing</button>
+        <button class="tab " data-tab="support"> Support</button>
+    </div>
+
+    <div class="services-wrapper">
+        {% comment %} for Development {% endcomment %}
+        <div class="services-group active" id="development">
+            <div class="service-card">
+                <img src="{% static 'core/image/computer.png' %}" alt="team"> 
+                <h6>Web Development</h6>
+                <p>
+                    Modern, scalable websites built for performance.
+                </p>  
+                <a href="#">View Details</a>
+
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/mobile.png' %}" alt="team"> 
+                <h6>App Development</h6>
+                <p>
+                    Mobile and web applications tailored to your needs
+                </p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/app.png' %}" alt="team"> 
+                <h6>API Integration</h6>
+                <p>
+                    Secure and reliable third-party integrations.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+        </div>
+
+        {% comment %} For marketing {% endcomment %}
+        <div class="services-group" id="marketing">
+            <div class="service-card">
+                <img src="{% static 'core/image/campaign.png' %}" alt="team"> 
+                <h6>Digital Campaigns</h6>
+                <p>
+                    Targeted campaigns that drive real results.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/search.png' %}" alt="team"> 
+
+                <h6>SEO Optimization</h6>
+                <p>
+                    Boost visibility and search engine ranking.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/share.png' %}" alt="team"> 
+
+                <h6>Social Media</h6>
+                <p>
+                    Engaging strategies that grow your audience.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+        </div>
+        <div class="services-group" id="support">
+            <div class="service-card">
+                <img src="{% static 'core/image/support.png' %}" alt="team"> 
+
+                <h6>24/7 Support</h6>
+                <p>
+                    Always available to assist your business
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/person.png' %}" alt="team"> 
+
+                <h6>System Monitoring</h6>
+                <p>
+                    Real-time monitoring and issue prevention.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'core/image/setting.png' %}" alt="team"> 
+
+
+                <h6>Maintenance</h6>
+                <p>
+                    Regular updates and performance optimization.
+                </p>
+                <a href="#">View Details</a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% comment %} Features Section {% endcomment %}
+<section id="features">
+    <div class="featureintro" data-animate="right">
+        <h6>Features</h6>
+        {% comment %} <hr> {% endcomment %}
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <br>Vitae laborum corporis minima necessitatibus velit? Eaque est modi qui dolore provident?
+        </p>
+    </div>
+
+    <div class="featureText" data-animate="right">
+        <div class="featuretextWrap">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. hhhggh uibbb uiy lopm uygt om  hhjgg yuim kkk Ea excepturi cum dicta non qui iure in a eveniet error quo.
+            </p>
+        </div>
+        <div class="featuretextImg">
+            <img src="{% static 'core/image/team3.png' %}"
+            class="rounded-3"
+             alt="">
+        </div>
+    </div>
+
+    <div class="smallBoxes" data-animate="right">
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/bolt.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>Lorem ipsum.</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/nest.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>Lorem ipsum.</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/launch.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>Lorem ipsum.</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/security (2).png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>Lorem ipsum.</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/warning.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>Lorem ipsum.</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="smallBoxes boxesrowLighter" data-animate="right">
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/setting.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>AI-Powered Automation</h6>
+                <p>
+                    amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+                <div class="smallerbtn">
+                    <p>Smart</p>
+                    <p>Automated</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/language.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>AI-Powered Automation</h6>
+                <p>
+                    amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+                <div class="smallerbtn">
+                    <p>Smart</p>
+                    <p>Automated</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/backup.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>AI-Powered Automation</h6>
+                <p>
+                    amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+                <div class="smallerbtn">
+                    <p>Smart</p>
+                    <p>Automated</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxesRow">
+            <div class="icon ">
+                <img src="{% static 'core/image/flight.png' %}" alt="bolt"> 
+            </div>
+            <div class="boxesrowText">
+                <h6>AI-Powered Automation</h6>
+                <p>
+                    amet consectetur adipisicing elit. Dolorum voluptatem aperiam atque assumenda provident esse.
+                </p>
+                <div class="smallerbtn">
+                    <p>Smart</p>
+                    <p>Automated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heroBtn featuredBtn">
+        <a href="{% url 'getstarted' %}" class="getStarted rounded-3">Get Started Today</a>
+        <a href="{% url 'services' %}" class="viewBtn rounded-3">View Demo</a>
+    </div>
+</section>
+
+{% comment %} Contact Section {% endcomment %}
+<section id="contact">
+    <div class="contactintro" data-animate="right">
+        <h6>Contact</h6>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, architecto?
+        </p>
+    </div>
+
+    <div class="contactSection" data-animate="right">
+        <div class="contactContainer">
+
+            <div class="contactLeft">
+                <h2>Ready to Connect</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae voluptas sequi?
+                </p>
+
+                <div class="contactCard">
+                    <div class="iconBox">
+                        <img src="{% static 'core/image/home.png' %}"
+                        class="rounded-3"
+                        alt="">
+                    </div>
+                    <div class="iconText">
+                        <h5>Visit Our Office</h5>
+                        <p>
+                            1278 Central West <br> New York, NY 2494
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactCard">
+                    <div class="iconBox">
+                        <img src="{% static 'core/image/message.png' %}"
+                        class="rounded-3"
+                        alt="">
+                    </div>
+                    <div>
+                        <h5>Send Us a Message</h5>
+                        <p>
+                            contact@example.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactCard">
+                    <div class="iconBox">
+                        <img src="{% static 'core/image/mobile.png' %}"
+                        class="rounded-3"
+                        alt="">
+                    </div>
+                    <div>
+                        <h5>Call Us Directly</h5>
+                        <p>
+                            +1 (555) 432-1098
+                        </p>
+                    </div>
+                </div>
+                <div class="contactCard">
+                    <div class="iconBox">
+                        <img src="{% static 'core/image/date.png' %}"
+                        class="rounded-3"
+                        alt="">
+                    </div>
+                    <div>
+                        <h5>Business Hours</h5>
+                        <p>
+                            Mon-Fri: 8AM-7PM <br>Weekends: By Appointment
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <p class="follow">Follow Our Journey</p>
+                <div class="socialIcons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+            </div>
+
+
+            <div class="contactRight">
+                <h3>Drop Us a Line</h3>
+
+                <form method="POST" action="{% url 'contact' %}">
+                    {% csrf_token %}
+
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <textarea name="message" placeholder="Your message goes here..." required></textarea>
+
+                    <button type="submit" class="sendBtn rounded-3">
+                        Send Message <img src="{% static 'core/image/arrow (3).png' %}" alt="">
+                    </button>
+                </form>
+            </div>         
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-light pt-5 pb-4 mt-5" data-animate="right">
+  <div class="container">
+    <hr class="my-4">
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6 footerHigh">
+        <h4 class="mb-3">Automatax</h4>
+        <p>
+          Crafting exceptional digital experiences through thoughtful design 
+          and innovative solutions that elevate your brand presence.
+        </p>
+
+        <ul class="list-unstyled contactInfo">
+          <li class="mb-2">
+            <i class="bi bi-geo-alt me-2"></i>
+            123 Creative Boulevard, NY 10012
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-telephone me-2"></i>
+            +1 (555) 987-6543
+          </li>
+          <li>
+            <i class="bi bi-envelope me-2"></i>
+            hello@designstudio.com
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 footerLinks">
+        <h6 class="mb-3">Studio</h6>
+        <ul class="list-unstyled ">
+          <li><a href="#" class="text-decoration-none ">Our Story</a></li>
+          <li><a href="#" class="text-decoration-none ">Design Process</a></li>
+          <li><a href="#" class="text-decoration-none ">Portfolio</a></li>
+          <li><a href="#" class="text-decoration-none ">Case Studies</a></li>
+          <li><a href="#" class="text-decoration-none ">Awards</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 footerLinks">
+        <h6 class="mb-3">Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Brand Identity</a></li>
+          <li><a href="#" class="text-decoration-none">Web Design</a></li>
+          <li><a href="#" class="text-decoration-none">Mobile Apps</a></li>
+          <li><a href="#" class="text-decoration-none">Digital Strategy</a></li>
+          <li><a href="#" class="text-decoration-none">Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 footerLinks">
+        <h6 class="mb-3">Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Design Blog</a></li>
+          <li><a href="#" class="text-decoration-none">Style Guide</a></li>
+          <li><a href="#" class="text-decoration-none">Free Assets</a></li>
+          <li><a href="#" class="text-decoration-none">Tutorials</a></li>
+          <li><a href="#" class="text-decoration-none">Inspiration</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-4 footerLinks">
+        <h6 class="mb-3">Connect</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none ">Start Project</a></li>
+          <li><a href="#" class="text-decoration-none">Schedule Call</a></li>
+          <li><a href="#" class="text-decoration-none">Join Newsletter</a></li>
+          <li><a href="#" class="text-decoration-none">Follow Updates</a></li>
+          <li><a href="#" class="text-decoration-none">Partnership</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="my-4">
+
+    <div class="row align-items-center gy-3 footerMiddle" data-animate="right">
+      <div class="col-md-6">
+        <h6>Stay Inspired</h6>
+        <p class="mb-0">
+          Subscribe to receive design insights and creative inspiration delivered monthly.
+        </p>
+      </div>
+
+        <div class="col-md-6 text-md-end social-links">
+            <a href="#" class="me-3 dance-link">
+                <i class="bi bi-dribbble"></i> Dribbble
+            </a>
+
+            <a href="#" class="me-3 dance-link">
+                <i class="bi bi-behance"></i> Behance
+            </a>
+
+            <a href="#" class="me-3 dance-link">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+
+            <a href="#" class="dance-link">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="d-md-flex justify-content-between small footerLow">
+      <div>
+        © 2026 <span style="color: #0D6EFD">Automatax</span>. All rights reserved.
+      </div>
+      <div>
+        <a href="#" class="me-3">Privacy Policy</a>
+        <a href="#" class="me-3">Terms of Service</a>
+        <a href="#" class="">Cookie Policy</a>
+      </div>
+
+      <div>
+        Designed by <span><a href="https://www.facebook.com/share/1Hkpkh9Bod/?mibextid=wwXIfr">Mmesomachuwku</a></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+{% endblock  %}

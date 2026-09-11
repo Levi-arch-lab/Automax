@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg fixed-top py-3">
+{% comment %} <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-5 mt-4 mx-5 rounded-5 p-3 "> {% endcomment %}
+    <div class="container navContainer rounded-5 shadow-sm">
+        <a class="navbar-brand " href="{% url 'home' %}">
+            Automatax
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-4 align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" >Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Solution
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">AI Chatbots</a></li>
+                        <li><a class="dropdown-item" href="#">AI Chatbots</a></li>
+                        <li><a class="dropdown-item" href="#">WhatsApp Automation</a></li>
+                        <li><a class="dropdown-item" href="#">Lead Capture & Follow-Up</a></li>
+                        <li><a class="dropdown-item" href="#">Booking Systems</a></li>
+                        {% comment %} <a class="dropdown-item" href="#ai-chatbots"> {% endcomment %}
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-primary ms-lg-3 rounded-5 navBtn" href="#getstarted"
+                    >Get Started
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        
+        
+    </div>
+</nav>
+
